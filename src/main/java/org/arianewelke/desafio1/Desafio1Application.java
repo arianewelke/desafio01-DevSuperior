@@ -21,8 +21,8 @@ public class Desafio1Application implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Order order = new Order(1309, 0.0, 95.90);
+        Order order = new Order(1309, 95.90, 0.0);
         System.out.println("Pedido código " + order.getCode());
-        System.out.printf("Valor total: R$ %.2f%n ", orderService.total(order));
+        System.out.printf("Valor total: R$ %.2f%n", orderService.total(order));
     }
 }
